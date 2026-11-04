@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100923">
+<title>+~ รักLink Click ~+ | Discord Community</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background: #090817;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 20%, #792cff35, transparent 35%),
+    radial-gradient(circle at 80% 70%, #00c8ff30, transparent 35%);
+  z-index: -2;
+}
+
+.stars {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(#ffffff80 1px, transparent 1px);
+  background-size: 55px 55px;
+  opacity: .15;
+  z-index: -1;
+}
+
+/* Navigation */
+nav {
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff15;
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #c5a6ff;
+  text-shadow: 0 0 15px #9b5cff;
+}
+
+.nav-label {
+  color: #aaa;
+  font-size: 13px;
+}
+
+/* Main */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 90px 0 60px;
+  text-align: center;
+}
+
+.status {
+  display: inline-block;
+  padding: 7px 18px;
+  border: 1px solid #a56cff80;
+  border-radius: 30px;
+  color: #d4b5ff;
+  background: #7d36ff18;
+  font-size: 13px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 20px #873cff25;
+}
+
+h1 {
+  font-size: clamp(35px, 7vw, 65px);
+  line-height: 1.35;
+  background: linear-gradient(90deg, #c48aff, #68caff, #c48aff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 5s linear infinite;
+  filter: drop-shadow(0 0 18px #8b5cff55);
+}
+
+@keyframes gradient {
+  to { background-position: 200%; }
+}
+
+.subtitle {
+  color: #b9b4d0;
+  font-size: 17px;
+  margin-top: 12px;
+}
+
+/* Community Card */
+.card {
+  margin: 45px auto 30px;
+  padding: 35px 28px;
+  max-width: 680px;
+  background: linear-gradient(145deg, #1a1232dd, #101c35dd);
+  border: 1px solid #8d61ff70;
+  border-radius: 22px;
+  box-shadow:
+    0 0 25px #853bff25,
+    inset 0 0 25px #318bff0b;
+  backdrop-filter: blur(15px);
+}
+
+.card h2 {
+  font-size: 25px;
+  color: #cbaaff;
+  margin-bottom: 15px;
+}
+
+.description {
+  color: #c5c5dc;
+  font-size: 16px;
+  line-height: 2;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px auto;
+  max-width: 680px;
+}
+
+.feature {
+  padding: 20px 10px;
+  background: #ffffff08;
+  border: 1px solid #ffffff18;
+  border-radius: 15px;
+  transition: .3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  border-color: #9c6bff;
+  box-shadow: 0 0 20px #813bff40;
+}
+
+.feature .emoji {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: #c7c5df;
+  font-size: 14px;
+}
+
+/* Join Button */
+.join-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 15px 45px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #8c43ff, #397dff);
+  box-shadow: 0 0 25px #794aff80;
+  transition: .3s;
+}
+
+.join-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 40px #8e56ff;
+}
+
+.small-text {
+  color: #8885a6;
+  font-size: 13px;
+  margin-top: 17px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #77738f;
+  border-top: 1px solid #ffffff12;
+  font-size: 13px;
+}
+
+/* Mobile */
+@media(max-width: 600px) {
+  nav { padding: 18px 5%; }
+  .container { padding-top: 65px; }
+  .features { grid-template-columns: 1fr; }
+  .card { padding: 27px 18px; }
+  .description { font-size: 14px; }
+}
+</style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+<nav>
+  <div class="logo">✦ Discord Community</div>
+  <div class="nav-label">NEON COMMUNITY</div>
+</nav>
+
+<main class="container">
+
+  <div class="status">✦ กำลังเปิดรับสมาชิกใหม่ ✦</div>
+
+  <h1>+~ รักLink Click ~+</h1>
+
+  <p class="subtitle">
+    พื้นที่เล็ก ๆ สำหรับมิตรภาพและความสนุก 💜
+  </p>
+
+  <section class="card">
+    <h2>ยินดีต้อนรับสู่ดิสของเรา!</h2>
+
+    <p class="description">
+      เข้ามาคุยเล่นกันได้น้าา 💗<br>
+      ดิสนี้เอาไว้หาเพื่อน คุย เล่นกัน<br>
+      เล่นเกมด้วยกัน และสร้างความสัมพันธ์<br>
+      คนในดิสเป็นกันเอง รักทุกคนเลยย ✨
+    </p>
+
+    <a class="join-btn"
+       href="https://discord.gg/T7RcV4fuUC"
+       target="_blank"
+       rel="noopener noreferrer">
+       ✦ เข้าร่วม Discord
+    </a>
+
+    <p class="small-text">
+      กดปุ่มเพื่อเข้าร่วมครอบครัวของเราได้เลย!
+    </p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <div class="emoji">💬</div>
+      <p>พูดคุยหาเพื่อน</p>
+    </div>
+
+    <div class="feature">
+      <div class="emoji">🎮</div>
+      <p>เล่นเกมด้วยกัน</p>
+    </div>
+
+    <div class="feature">
+      <div class="emoji">💜</div>
+      <p>มิตรภาพและความสนุก</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 +~ รักLink Click ~+ <br>
+  Made with 💜 for our community
+</footer>
+
+</body>
+</html>
